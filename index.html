@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <title>Manoj Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="mym.jpg">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><span class="blinking">Wel come to...! </span> Manoj's Portfolio</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="right">
+                
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#bottom">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">Hi, My name is <span class="purple">Manoj.</span>
+                <div>I am a <span class="color">Software Trainee</span> and I am Passinate about</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="IMG_20240529_140809-removebg-preview.png">
+            </div>
+        </section>
+        <hr>
+        <span class="blinking1"><p>Visit My Accounts and Contact me</p></span>
+        <footer style="background-color: rgb(9, 9, 65); height: 180px;">
+        <div class="container">
+            <div class="content-item">
+              <!-- Content for the left side -->
+              <h4>Call Me<img src="phone.jpeg"></h4>
+              <p> +91-9353415469</p>
+            </div><br><br>
+            
+            <div class="content-item">
+              <!-- Content for the middle -->
+              <h4>Visit Me <img src="location.jpeg"></h4>
+              <p>S/O Ashok Basaragi,<br>Ward NO 19, Radhapur<br>peth Ramdurg, Belgaum,<br> Karnatak-591123</p>
+            </div><br><br>
+            
+            <div class="content-item">
+              <!-- Content for the right side -->
+              <h4>Write Me <img src="email.jpeg"> </h4>
+              <p>basaragimanoj<br>58@gmail.com </p>
+            </div>
+          </div>
+        </footer>
+    <div id="bottom"></div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Designing'],
+          typeSpeed: 50,
+        });
+
+        function toggleMenu() {
+        const menu = document.querySelector('nav .right ul');
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+       
+    }
+      </script>
+</body>
+</html>
